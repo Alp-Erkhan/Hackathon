@@ -1,0 +1,51 @@
+.Header {
+    background-color: #ffcc00;
+}
+
+.Header__nav  {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    align-items: center;
+}
+
+.Header__logo {
+    position: relative;
+    overflow: hidden;
+    width: 256px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.Header__logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 256px;
+    height: 64px;
+}
+
+.Header__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Header__phone {
+    justify-self: end;
+}
+
+.Header__menu-link,
+.Header__phone-link {
+    list-style: none;
+}
+ .Header__menu-link a,
+ .Header__phone-link a {
+     color: #000;
+     text-decoration: none;
+ }
+
+ .Header__menu-link a:hover,
+ .Header__phone-link a:hover {
+     color: #d40511;
+     transition: 0.3s;
+ }
